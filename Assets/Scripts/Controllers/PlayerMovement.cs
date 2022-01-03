@@ -42,6 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Thrust()
     {
+        print(keyboard);
         rb.AddForce(keyboard.spaceKey.isPressed? Vector2.up * speed : Vector2.zero,ForceMode2D.Impulse);
     }
 
