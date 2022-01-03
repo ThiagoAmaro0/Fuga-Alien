@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 
 public class PauseHandler : MonoBehaviour
 {
+    [SerializeField] TextMeshProUGUI muteText;
     public void Pause()
     {
         EnergyManager.PauseAction.Invoke();
@@ -16,13 +17,11 @@ public class PauseHandler : MonoBehaviour
     }
     public void Mute()
     {
-        TextMeshProUGUI text = EventSystem.current.currentSelectedGameObject
-            .GetComponentInChildren<TextMeshProUGUI>();
         SoundManager.Mute();
         if (SoundManager.GetMute())
-            text.text = "Ligar musica";
+            muteText.text = "Ligar musica";
         else
-            text.text = "Desligar musica";
+            muteText.text = "Desligar musica";
 
     }
 }
