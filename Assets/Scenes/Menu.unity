@@ -1205,7 +1205,7 @@ MonoBehaviour:
   audioSource: {fileID: 1592482943}
   musicSource: {fileID: 1592482942}
   defaultMixer: {fileID: 24300002, guid: a498e55b08181984bac1886641ae5e27, type: 2}
-  zoneMixer: {fileID: 24300002, guid: 4cad3ae5da75e544a96a962a479f9ef7, type: 2}
+  zoneMixer: {fileID: 819058174222103855, guid: a498e55b08181984bac1886641ae5e27, type: 2}
 --- !u!4 &1592482945
 Transform:
   m_ObjectHideFlags: 0
