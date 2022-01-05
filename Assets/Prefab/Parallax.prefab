@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dc8fffe153ae20a43a16070d829d1bfb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_Color: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 0.78431374}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -132,11 +132,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.04
   sprites:
-  - {fileID: 21300000, guid: a68339b8c652c1d4c98abd76d6873c3b, type: 3}
-  - {fileID: 21300000, guid: 2fd976336e9b7fe44b6f3470306ef366, type: 3}
-  - {fileID: 21300000, guid: 458b5735e6224eb488b73a3a6b27c872, type: 3}
-  - {fileID: 21300000, guid: a07941adf79305b40a611e33cf94aac3, type: 3}
-  - {fileID: 21300000, guid: 0c3bd67039ab71f4c97205b700e42c70, type: 3}
+  - {fileID: 4519518871663985449, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 5994275585877690731, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 7276018992636381005, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 4764904786231306360, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 5145774931494969807, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 2108950699465493383, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: -878775300250748510, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 228813063816687610, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 4081543301678191023, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: -8169790608347111050, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 1486043848406091610, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: -6970575990612153500, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 3436399624490136125, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 5424052872766482582, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 8516180259996658169, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 1158281529177622174, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 2561722028575424384, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 2255459018434927989, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: -655248991383421947, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 6495464288226304558, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 7501557443856019538, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
+  - {fileID: 7108103030451112592, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
   objects:
   - {fileID: 4296038674673347666}
   - {fileID: 5135037671014133744}
@@ -193,6 +210,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 781569910685193367, guid: 43357ed357689da4da8e5a96aa998654, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5994275585877690731, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
     - target: {fileID: 2347561071271858632, guid: 43357ed357689da4da8e5a96aa998654, type: 3}
       propertyPath: m_Name
       value: ParallaxObject
@@ -263,7 +284,7 @@ PrefabInstance:
     - target: {fileID: 781569910685193367, guid: 43357ed357689da4da8e5a96aa998654, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a07941adf79305b40a611e33cf94aac3, type: 3}
+      objectReference: {fileID: -6970575990612153500, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
     - target: {fileID: 2347561071271858632, guid: 43357ed357689da4da8e5a96aa998654, type: 3}
       propertyPath: m_Name
       value: ParallaxObject
@@ -334,7 +355,7 @@ PrefabInstance:
     - target: {fileID: 781569910685193367, guid: 43357ed357689da4da8e5a96aa998654, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a07941adf79305b40a611e33cf94aac3, type: 3}
+      objectReference: {fileID: -655248991383421947, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
     - target: {fileID: 2347561071271858632, guid: 43357ed357689da4da8e5a96aa998654, type: 3}
       propertyPath: m_Name
       value: ParallaxObject
@@ -405,7 +426,7 @@ PrefabInstance:
     - target: {fileID: 781569910685193367, guid: 43357ed357689da4da8e5a96aa998654, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 458b5735e6224eb488b73a3a6b27c872, type: 3}
+      objectReference: {fileID: 6495464288226304558, guid: 68a147ec1abb0f74fbb97ec423b78c43, type: 3}
     - target: {fileID: 2347561071271858632, guid: 43357ed357689da4da8e5a96aa998654, type: 3}
       propertyPath: m_Name
       value: ParallaxObject
