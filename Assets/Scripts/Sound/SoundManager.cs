@@ -51,8 +51,23 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    public static void PlayOnShot(string sound, float pitch, float volume)
+    {
+        if (!instance)
+            return;
+        print(pitch);
+        foreach (Sound s in instance.sounds)
+        {
+            if (s.name == sound)
+            {
+                instance.StartOnShot(s, pitch,volume);
+            }
+        }
+    }
+
     private void StartSound(Sound sound)
     {
+        audioSource.pitch = 1;
         if (sound.Loop)
         {
             if (sound.Clip == musicSource.clip)
@@ -76,6 +91,12 @@ public class SoundManager : MonoBehaviour
             }
         }
     }
+    private void StartOnShot(Sound sound, float pitch, float volume)
+    {
+        audioSource.pitch = pitch;
+        audioSource.PlayOneShot(sound.Clip, volume);
+    }
+
     public static void Mute()
     {
         instance.musicSource.mute = !instance.musicSource.mute;

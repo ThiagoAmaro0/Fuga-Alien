@@ -91,7 +91,6 @@ public class EnergyManager : MonoBehaviour
 
     private void Continue()
     {
-        Time.timeScale = 1;
         pause = false;
     }
 
@@ -99,7 +98,7 @@ public class EnergyManager : MonoBehaviour
     {
         energy += value;
         energy = Mathf.Clamp(energy, 0, 100);
-        SoundManager.Play("EnergyUp");
+        SoundManager.PlayOnShot("EnergyUp", Random.Range(0.75f, 1.25f), Random.Range(0.75f, 1));
     }
 
     public float GetEnergy()
