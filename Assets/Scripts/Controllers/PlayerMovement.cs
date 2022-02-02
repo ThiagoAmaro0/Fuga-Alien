@@ -6,13 +6,12 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] private EngineSound engineSound;
 
     private Rigidbody2D rb;
     private Keyboard keyboard;
 
     private bool pause;
-    private bool dead;
-
 
     // Start is called before the first frame update
     private void Awake()
@@ -42,7 +41,15 @@ public class PlayerMovement : MonoBehaviour
 
     public void Thrust()
     {
-        rb.AddForce(keyboard.spaceKey.isPressed? Vector2.up * speed : Vector2.zero,ForceMode2D.Impulse);
+        if (keyboard.spaceKey.isPressed)
+        {
+            rb.AddForce(Vector2.up * speed, ForceMode2D.Impulse);
+            engineSound.SpeedUp();
+        }
+        else
+        {
+            engineSound.SpeedDown();
+        }
     }
 
     private void Stop()
@@ -62,7 +69,6 @@ public class PlayerMovement : MonoBehaviour
         SoundManager.Play("GameOver");
         EnergyManager.PauseAction.Invoke();
         EnergyManager.GameOverAction.Invoke();
-        dead = true;
         transform.DetachChildren();
         rb.gravityScale = 1;
         transform.DOShakeScale(0.25f);
